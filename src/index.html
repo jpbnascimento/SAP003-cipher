@@ -6,14 +6,24 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1> Criptografia Wifi</h1>    
-    <label>Digite a palavra a ser cifrada/descifrada:</label>
-    <input id="cd" type="text">
-    <label>Digite o deslocamento:</label>
-    <input id="des" type="number">
-    <button onclick="pegaValorCifrar()">Cifrar</button>
-    <button onclick="pegaValorDecifrar()">Decifrar</button>   
-    <script src="index.js"></script>
-    <script src="cipher.js"></script>
+    <main>
+        <div id="imagem">  
+          <img src="wifi.jpeg">
+        </div>
+      <div>
+        <p>
+          <label>Digite a palavra a ser cifrada/descifrada:</label>
+            <input id="cd" type="text">
+        </p>
+        <p>
+          <label>Digite o deslocamento:</label>
+            <input id="des" type="number">
+        </p>
+        <button onclick="pegaValorCifrar()">Cifrar</button>
+        <button onclick="pegaValorDecifrar()">Decifrar</button>  
+      </div>   
+    </main>
+  <script src="index.js"></script>
+  <script src="cipher.js"></script>
   </body>
 </html>
