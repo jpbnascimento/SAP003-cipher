@@ -1,13 +1,13 @@
 function pegaValorCifrar(){
     let text = document.getElementById("cd").value;
     let deslocamento = Number(document.getElementById("des").value);
-    window.cipher.encode(text, deslocamento);
+    document.getElementById("retorno").innerHTML= `Seu codigo cifrado é ${window.cipher.encode(text, deslocamento)} `;
 }
 
 function pegaValorDecifrar(){
     let text = document.getElementById("cd").value;
     let deslocamento = Number(document.getElementById("des").value);
-    window.cipher.decode(text, deslocamento);
+    document.getElementById("retorno").innerHTML= `Seu codigo decifrado é ${window.cipher.decode(text, deslocamento)} `;
 }
 
 
