@@ -8,10 +8,13 @@ function cifrar(deslocamento, text) {
     }
     else if (text.charCodeAt(i)>=97 && text.charCodeAt(i)<=122) {
       resultado += String.fromCharCode((text.charCodeAt(i) - 97 + deslocamento) % 26 + 97);
-    }    
+    } 
+    else {
+      resultado += text.charAt(i);
+    }   
   }
    
-  return resultado;
+  return resultado; 
 }
 
 function decifrar(deslocamento, text) {
@@ -24,6 +27,9 @@ function decifrar(deslocamento, text) {
     }
     else if (text.charCodeAt(i)>=97 && text.charCodeAt(i)<=122) {
       resultado += String.fromCharCode((text.charCodeAt(i) - 122 - deslocamento) % 26 + 122);
+    }
+    else {
+      resultado += text.charAt(i);
     }
   }
   return resultado;
