@@ -1,16 +1,27 @@
 body{
     background-color: black;
     color: white;
+    background-image: planodefundo.jpeg;
 }
 
 div{
     text-align: center;
 }
 
-#imagem{
+.geral{
     margin-top: 150px;
+    background-color: blueviolet;
+    height: 500px;
+    width: 500px;
 }
 
 #retorno{
     color: white;
+}
+
+#des{
+    margin-left: 12px;
+}
+.botões{
+    margin-left: 115px;
 }

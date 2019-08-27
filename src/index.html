@@ -8,22 +8,24 @@
   </head>
   <body>
     <main>
-      <form>
-        <div id="imagem">  
-          <img src="wifi.jpeg">
-        <p>
-          <label>Digite sua senha:</label>
-            <input id="cd" type="text">
-        </p>
-        <p>
-          <label>Digite o offset:  </label>
-            <input id="des" type="number">
-        </p>
-        <button type="submit" id="cifrar">Cifrar</button>
-        <button type="submit" id="decifrar">Decifrar</button>  
-        <p id="retorno"></p>
+      <div class="geral">  
+        <div class="img"><img src="wifi.jpeg"></div>
+          <form>
+            <p>
+              <label>Digite sua senha:</label>
+                <input id="cd" type="text" placeholder="">
+            </p>
+            <p>
+              <label>Digite o offset:  </label>
+                <input id="des" type="number" placeholder="">
+            </p>
+              <div class="botões">
+                <button type="submit"  id="cifrar" >Cifrar</button>
+                <button type="submit" id="decifrar">Decifrar</button>  
+              </div>
+            <p id="retorno"></p>
+       </form>   
       </div>
-    </form>   
     </main>
   <script src="index.js"></script>
   <script src="cipher.js"></script>
