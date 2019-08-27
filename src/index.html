@@ -8,6 +8,7 @@
   </head>
   <body>
     <main>
+      <form>
         <div id="imagem">  
           <img src="wifi.jpeg">
         <p>
@@ -18,10 +19,11 @@
           <label>Digite o offset:  </label>
             <input id="des" type="number">
         </p>
-        <button type="submit" onclick="pegaValorCifrar()">Cifrar</button>
-        <button onclick="pegaValorDecifrar()">Decifrar</button>  
+        <button type="submit" id="cifrar">Cifrar</button>
+        <button type="submit" id="decifrar">Decifrar</button>  
         <p id="retorno"></p>
-      </div>   
+      </div>
+    </form>   
     </main>
   <script src="index.js"></script>
   <script src="cipher.js"></script>

@@ -11,7 +11,7 @@ function cifrar(deslocamento, text) {
     }    
   }
    
-  console.log(resultado);
+  return resultado;
 }
 
 function decifrar(deslocamento, text) {
@@ -26,5 +26,5 @@ function decifrar(deslocamento, text) {
       resultado += String.fromCharCode((text.charCodeAt(i) - 122 - deslocamento) % 26 + 122);
     }
   }
-  console.log(resultado);
+  return resultado;
 }
