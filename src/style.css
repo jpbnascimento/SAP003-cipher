@@ -37,18 +37,22 @@ body{
 
 #cifrar{
     border-radius: 50px;
+    outline: 0;
 }
 
 #decifrar{
     border-radius: 50px;
+    outline: 0;
 }
 
 #cd{
     border-radius: 30px;
+    outline: 0;
 }
 
 #des{
     border-radius: 30px;
+    outline: 0;
 }
 
 .img{
